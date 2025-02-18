@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="task_todo_list.css">
+</head>
+<body>
+    <div>
+        <h1>Student Form</h1>
+        <table border="1" class="task-container1">
+            <tr>
+                <th>Name</th><td><input id="namevalue" type="text"></td>
+            </tr>
+            <tr>
+                <th>Age</th><td><input id="agevalue" type="number"></td>
+            </tr>
+            <tr>
+                <th>Gender</th><td><input id="gendervalue" type="radio" id="Male" name="Gender">Male <input type="radio" id="Female" name="Gender"> Female</td>
+            </tr>
+            <tr>
+                <th>Course</th><td><select name="Course" id="coursevalue">
+                    <option id="Javascript" value="Javascript">Javascript</option>
+                    <option id="Python" value="Python">Python</option>
+                    <option id="Java" value="Java">Java</option>
+                </select></td>
+            </tr>
+            <tr>
+                <th>E-mail </th><td><input id="emailvalue" type="email"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="update()" id="save">Save</button></td>
+            </tr>
+        </table>
+        </div>
+        <div>
+        <table border="1" class="task-container2">
+            <tr>
+                <th>Name</th><th>Age</th><th>Course</th><th>Gender</th><th>E-mail</th><th>Action</th>
+            </tr>
+            <tr>
+                <td id="name1"></td><td id="age1"></td><td id="course1"></td><td id="gender1"></td><td id="email1"></td><td><button onclick="deleteitem()" class="delete" id="delete1">Delete</button></td>
+            </tr>
+            <tr>
+                <td id="name2"></td><td id="age2"></td><td id="course2"></td><td id="gender2"></td><td id="email2"></td><td><button onclick="deleteitem()" class="delete" id="delete2">Delete</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="task_todo_list.js" defer></script>
+</body>
+</html>
