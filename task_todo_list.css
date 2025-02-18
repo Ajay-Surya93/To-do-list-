@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    margin: 20px;
+}
+div{
+    width: 100%;
+    margin: 10px;
+}
+.task-container1,.task-container2{
+    margin-left: auto;
+    margin-right: auto;
+}
+table , th , td {
+    padding: 5px;
+}
+#save{
+    padding: 5px 105px;
+    background-color: aqua;
+}
+.delete{
+    background-color: red;
+    padding: 2px;
+}
+
+
